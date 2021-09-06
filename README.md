@@ -139,6 +139,12 @@ for ( i = 0; i < 100; i++ ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   [`@stdlib/utils/papply`][@stdlib/utils/papply]: partially apply function arguments.
+
 </section>
 
 <!-- /.related -->
@@ -200,7 +206,11 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/utils-papply-right/main/LICENSE
 
+<!-- <related-links> -->
+
 [@stdlib/utils/papply]: https://github.com/stdlib-js/utils-papply
+
+<!-- </related-links> -->
 
 </section>
 
