@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/utils-papply-right",
-  "version": "0.0.8",
+  "version": "0.0.0",
   "description": "Partially apply function arguments from the right.",
   "license": "Apache-2.0",
   "author": {
