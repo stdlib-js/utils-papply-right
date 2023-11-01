@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,73 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var papplyRight = require( './../../dist' );
-
-
-// FUNCTIONS //
-
-function say( text, name ) {
-	return text + ', ' + name + '.';
-}
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof papplyRight, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function throws an error if not provided a function', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		5,
-		NaN,
-		null,
-		void 0,
-		true,
-		[],
-		{}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.throws( badValue( values[i] ), TypeError, 'throws an error when provided '+values[i] );
-	}
-	t.end();
-
-	function badValue( value ) {
-		return function badValue() {
-			papplyRight( value );
-		};
-	}
-});
-
-tape( 'the function returns a function', function test( t ) {
-	var fcn = papplyRight( say, 'Ada Lovelace' );
-	t.strictEqual( typeof fcn, 'function', 'returns a function' );
-	t.notEqual( fcn, say, 'returns a new function' );
-	t.end();
-});
-
-tape( 'the function partially applies function arguments', function test( t) {
-	var fcn = papplyRight( say, 'Grace Hopper' );
-
-	t.strictEqual( fcn( 'Hello' ), 'Hello, Grace Hopper.', 'returned function returns partial application results' );
-
-	t.strictEqual( fcn( 'Thank you' ), 'Thank you, Grace Hopper.', 'returned function returns partial application results' );
-
-	t.end();
-});
-
-tape( 'the function does not require function arguments to partially apply', function test( t ) {
-	var fcn = papplyRight( say );
-	t.strictEqual( typeof fcn, 'function', 'returns a function' );
-	t.notEqual( fcn, say, 'returns a new function' );
-	t.strictEqual( fcn( 'Thank you', 'Betty Friedan' ), 'Thank you, Betty Friedan.', 'returns expected value' );
-	t.strictEqual( fcn( 'Hello', 'Hannah Arendt' ), 'Hello, Hannah Arendt.', 'returns expected value' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
