@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-05-26)
+## Unreleased (2026-01-29)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`07f7c05`](https://github.com/stdlib-js/stdlib/commit/07f7c0522c73e6ad9505e1d45035ae439344200d) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`2965f8f`](https://github.com/stdlib-js/stdlib/commit/2965f8f4d1469ed76c7d9c150b39a87b62d73fbd) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 
 </details>
